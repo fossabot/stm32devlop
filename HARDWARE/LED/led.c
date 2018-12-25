@@ -1,3 +1,5 @@
+
+
 #include "led.h" 
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
@@ -15,28 +17,23 @@
 //初始化PF9和PF10为输出口.并使能这两个口的时钟		    
 //LED IO初始化
 void LED_Init(void)
-{    	 
-  GPIO_InitTypeDef  GPIO_InitStructure;
-
-  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC,ENABLE);
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD,ENABLE);
-	//时钟使能
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//普通输出模式
-  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
-  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-  GPIO_Init(GPIOC,&GPIO_InitStructure);//初始化GPIO
+{
+	GPIO_InitTypeDef GPIO_str;
+		
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOF,ENABLE);
 	
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//普通输出模式
-  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
-  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-	GPIO_Init(GPIOD,&GPIO_InitStructure);
+	GPIO_str.GPIO_Pin=GPIO_Pin_9|GPIO_Pin_10;
+	GPIO_str.GPIO_Mode=GPIO_Mode_OUT;
+	GPIO_str.GPIO_Speed=GPIO_Fast_Speed;
+	GPIO_str.GPIO_OType=GPIO_OType_PP;
+	GPIO_str.GPIO_PuPd=GPIO_PuPd_UP;
+		
+	GPIO_Init(GPIOF,&GPIO_str);
 	
-	GPIO_SetBits(GPIOF,GPIO_Pin_0 | GPIO_Pin_3);//IO口输出1
-
+	GPIO_SetBits(GPIOF,GPIO_Pin_9);
+	GPIO_SetBits(GPIOF,GPIO_Pin_10);
+	
+	
 }
 
 
