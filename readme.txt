@@ -1,5 +1,10 @@
-ÕâÊÇSinonµÄµ¥Æ¬»úÊµÑé´úÂë¿â
-³õÊ¼°æ±¾À´×Ô°æÈ¨·½Ìá¹©£¬Ö®ºóµÄĞŞ¸Ä°æ±¾¾ùÎª¸öÈËÔ­´´¡£
-ËùÓĞ´úÂë½ö¹©ÓÃÓÚÑ§Ï°ÓÃÍ¾£¬½ûÖ¹½øĞĞÈÎºÎÉÌÒµĞĞÎª£¡
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSinonJZH%2Fstm32devlop.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSinonJZH%2Fstm32devlop?ref=badge_shield)
 
-¹¤³ÌÔ´ÂëÀ´×Ô£ºÕıµãÔ­×Ó
+è¿™æ˜¯Sinonçš„å•ç‰‡æœºå®éªŒä»£ç åº“
+åˆå§‹ç‰ˆæœ¬æ¥è‡ªç‰ˆæƒæ–¹æä¾›ï¼Œä¹‹åçš„ä¿®æ”¹ç‰ˆæœ¬å‡ä¸ºä¸ªäººåŸåˆ›ã€‚
+æ‰€æœ‰ä»£ç ä»…ä¾›ç”¨äºå­¦ä¹ ç”¨é€”ï¼Œç¦æ­¢è¿›è¡Œä»»ä½•å•†ä¸šè¡Œä¸ºï¼
+
+å·¥ç¨‹æºç æ¥è‡ªï¼šæ­£ç‚¹åŸå­
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSinonJZH%2Fstm32devlop.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSinonJZH%2Fstm32devlop?ref=badge_large)
